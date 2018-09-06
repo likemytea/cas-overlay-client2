@@ -1,0 +1,290 @@
+2018-09-06 18:37:04.747  INFO 9020 --- [main] c.c.c.CasOverlayClientApplication        : Starting CasOverlayClientApplication on DESKTOP-N5K2GI1 with PID 9020 (C:\Users\huayu\git\cas-overlay-client2\target\classes started by huayu in C:\Users\huayu\git\cas-overlay-client2)
+2018-09-06 18:37:04.747  INFO 9020 --- [main] c.c.c.CasOverlayClientApplication        : No active profile set, falling back to default profiles: default
+2018-09-06 18:37:04.786  INFO 9020 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Thu Sep 06 18:37:04 CST 2018]; root of context hierarchy
+2018-09-06 18:37:05.774  INFO 9020 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8444 (https)
+2018-09-06 18:37:05.788  INFO 9020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-06 18:37:05.788  INFO 9020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-09-06 18:37:05.975  INFO 9020 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-09-06 18:37:05.979  INFO 9020 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-06 18:37:05.979  INFO 9020 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1197 ms
+2018-09-06 18:37:05.991  INFO 9020 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---登陆过滤器
+2018-09-06 18:37:06.006  INFO 9020 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---过滤验证器
+2018-09-06 18:37:06.010  INFO 9020 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---授权过滤器
+2018-09-06 18:37:06.014  INFO 9020 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---wraper过滤器
+2018-09-06 18:37:06.014  INFO 9020 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---启动监听器
+2018-09-06 18:37:06.115  INFO 9020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-06 18:37:06.115  INFO 9020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-06 18:37:06.115  INFO 9020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-06 18:37:06.115  INFO 9020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-06 18:37:06.115  INFO 9020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-09-06 18:37:06.115  INFO 9020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-09-06 18:37:06.115  INFO 9020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-09-06 18:37:06.115  INFO 9020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-09-06 18:37:06.115  INFO 9020 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-06 18:37:06.135  INFO 9020 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://test.mycasdomain.com/cas]
+2018-09-06 18:37:06.139  INFO 9020 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8443]
+2018-09-06 18:37:06.143  INFO 9020 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-09-06 18:37:06.143  INFO 9020 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://test.mycasdomain.com/cas]
+2018-09-06 18:37:06.143  INFO 9020 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8443]
+2018-09-06 18:37:06.143  INFO 9020 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://test.mycasdomain.com/cas]
+2018-09-06 18:37:06.143  INFO 9020 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-09-06 18:37:06.143  INFO 9020 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.chenxing.casoverlayclient.filter.SimpleUrlPatternMatcherStrategy]
+2018-09-06 18:37:06.143  INFO 9020 --- [localhost-startStop-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---配置正则表达式的规则
+2018-09-06 18:37:06.354  INFO 9020 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Thu Sep 06 18:37:04 CST 2018]; root of context hierarchy
+2018-09-06 18:37:06.400  INFO 9020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-09-06 18:37:06.404  INFO 9020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-09-06 18:37:06.404  INFO 9020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2()
+2018-09-06 18:37:06.404  INFO 9020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-09-06 18:37:06.404  INFO 9020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 18:37:06.404  INFO 9020 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 18:37:06.412  INFO 9020 --- [main] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---WebMvcConfigurerAdapter
+2018-09-06 18:37:06.416  INFO 9020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-09-06 18:37:06.428  INFO 9020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 18:37:06.428  INFO 9020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 18:37:06.459  INFO 9020 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 18:37:06.564  INFO 9020 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-06 18:37:06.787 ERROR 9020 --- [main] org.apache.tomcat.util.net.SSLUtilBase   : Failed to load keystore type [JKS] with path [file:/C:/Users/huayu/git/cas-overlay-client2/tomcat.key] due to [C:\Users\huayu\git\cas-overlay-client2\tomcat.key (系统找不到指定的文件。)]
+
+java.io.FileNotFoundException: C:\Users\huayu\git\cas-overlay-client2\tomcat.key (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method) ~[na:1.8.0_25]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[na:1.8.0_25]
+	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[na:1.8.0_25]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90) ~[na:1.8.0_25]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188) ~[na:1.8.0_25]
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:96) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:132) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:187) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:183) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.chenxing.casoverlayclient.CasOverlayClientApplication.main(CasOverlayClientApplication.java:28) [classes/:na]
+
+2018-09-06 18:37:06.788 ERROR 9020 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler ["https-jsse-nio-8444"]
+
+java.lang.IllegalArgumentException: java.io.FileNotFoundException: C:\Users\huayu\git\cas-overlay-client2\tomcat.key (系统找不到指定的文件。)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:115) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.chenxing.casoverlayclient.CasOverlayClientApplication.main(CasOverlayClientApplication.java:28) [classes/:na]
+Caused by: java.io.FileNotFoundException: C:\Users\huayu\git\cas-overlay-client2\tomcat.key (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method) ~[na:1.8.0_25]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[na:1.8.0_25]
+	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[na:1.8.0_25]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90) ~[na:1.8.0_25]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188) ~[na:1.8.0_25]
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:96) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:132) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:187) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:183) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 19 common frames omitted
+
+2018-09-06 18:37:06.790 ERROR 9020 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8444]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8444]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.chenxing.casoverlayclient.CasOverlayClientApplication.main(CasOverlayClientApplication.java:28) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 13 common frames omitted
+Caused by: java.lang.IllegalArgumentException: java.io.FileNotFoundException: C:\Users\huayu\git\cas-overlay-client2\tomcat.key (系统找不到指定的文件。)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:115) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 14 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\huayu\git\cas-overlay-client2\tomcat.key (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method) ~[na:1.8.0_25]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[na:1.8.0_25]
+	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[na:1.8.0_25]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90) ~[na:1.8.0_25]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188) ~[na:1.8.0_25]
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:96) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:132) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:187) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:183) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 19 common frames omitted
+
+2018-09-06 18:37:06.806  INFO 9020 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-09-06 18:37:06.813  INFO 9020 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-09-06 18:37:06.813 ERROR 9020 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8444 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8444, or configure this application to listen on another port.
+
+2018-09-06 18:37:06.817  INFO 9020 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Thu Sep 06 18:37:04 CST 2018]; root of context hierarchy
+2018-09-06 18:37:06.817  INFO 9020 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-06 18:38:13.378  INFO 2508 --- [main] c.c.c.CasOverlayClientApplication        : Starting CasOverlayClientApplication on DESKTOP-N5K2GI1 with PID 2508 (C:\Users\huayu\git\cas-overlay-client2\target\classes started by huayu in C:\Users\huayu\git\cas-overlay-client2)
+2018-09-06 18:38:13.378  INFO 2508 --- [main] c.c.c.CasOverlayClientApplication        : No active profile set, falling back to default profiles: default
+2018-09-06 18:38:13.421  INFO 2508 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Thu Sep 06 18:38:13 CST 2018]; root of context hierarchy
+2018-09-06 18:38:14.424  INFO 2508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8444 (https)
+2018-09-06 18:38:14.441  INFO 2508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-06 18:38:14.441  INFO 2508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-09-06 18:38:14.644  INFO 2508 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-09-06 18:38:14.644  INFO 2508 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-06 18:38:14.648  INFO 2508 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1223 ms
+2018-09-06 18:38:14.656  INFO 2508 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---登陆过滤器
+2018-09-06 18:38:14.671  INFO 2508 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---过滤验证器
+2018-09-06 18:38:14.675  INFO 2508 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---授权过滤器
+2018-09-06 18:38:14.679  INFO 2508 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---wraper过滤器
+2018-09-06 18:38:14.679  INFO 2508 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---启动监听器
+2018-09-06 18:38:14.792  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-06 18:38:14.792  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-06 18:38:14.792  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-06 18:38:14.792  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-06 18:38:14.792  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-09-06 18:38:14.792  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-09-06 18:38:14.792  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-09-06 18:38:14.792  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-09-06 18:38:14.792  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-06 18:38:14.812  INFO 2508 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://test.mycasdomain.com/cas]
+2018-09-06 18:38:14.816  INFO 2508 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8443]
+2018-09-06 18:38:14.816  INFO 2508 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-09-06 18:38:14.820  INFO 2508 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://test.mycasdomain.com/cas]
+2018-09-06 18:38:14.820  INFO 2508 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8443]
+2018-09-06 18:38:14.820  INFO 2508 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://test.mycasdomain.com/cas]
+2018-09-06 18:38:14.820  INFO 2508 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-09-06 18:38:14.820  INFO 2508 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.chenxing.casoverlayclient.filter.SimpleUrlPatternMatcherStrategy]
+2018-09-06 18:38:14.820  INFO 2508 --- [localhost-startStop-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---配置正则表达式的规则
+2018-09-06 18:38:15.011  INFO 2508 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Thu Sep 06 18:38:13 CST 2018]; root of context hierarchy
+2018-09-06 18:38:15.058  INFO 2508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-09-06 18:38:15.058  INFO 2508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2()
+2018-09-06 18:38:15.058  INFO 2508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-09-06 18:38:15.058  INFO 2508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-09-06 18:38:15.066  INFO 2508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 18:38:15.066  INFO 2508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 18:38:15.070  INFO 2508 --- [main] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---WebMvcConfigurerAdapter
+2018-09-06 18:38:15.073  INFO 2508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-09-06 18:38:15.085  INFO 2508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 18:38:15.085  INFO 2508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 18:38:15.113  INFO 2508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 18:38:15.222  INFO 2508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-06 18:38:15.456  INFO 2508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8444 (https)
+2018-09-06 18:38:15.462  INFO 2508 --- [main] c.c.c.CasOverlayClientApplication        : Started CasOverlayClientApplication in 2.334 seconds (JVM running for 2.64)
+2018-09-06 18:39:53.744  INFO 2508 --- [https-jsse-nio-8444-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-06 18:39:53.745  INFO 2508 --- [https-jsse-nio-8444-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-06 18:39:53.759  INFO 2508 --- [https-jsse-nio-8444-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-09-06 18:39:53.767  INFO 2508 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:41:27.230  INFO 2508 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:43:17.932  INFO 5596 --- [main] c.c.c.CasOverlayClientApplication        : Starting CasOverlayClientApplication on DESKTOP-N5K2GI1 with PID 5596 (C:\Users\huayu\git\cas-overlay-client2\target\classes started by huayu in C:\Users\huayu\git\cas-overlay-client2)
+2018-09-06 18:43:17.935  INFO 5596 --- [main] c.c.c.CasOverlayClientApplication        : No active profile set, falling back to default profiles: default
+2018-09-06 18:43:17.978  INFO 5596 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Thu Sep 06 18:43:17 CST 2018]; root of context hierarchy
+2018-09-06 18:43:18.982  INFO 5596 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8444 (https)
+2018-09-06 18:43:18.992  INFO 5596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-06 18:43:18.992  INFO 5596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-09-06 18:43:19.180  INFO 5596 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-09-06 18:43:19.184  INFO 5596 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-06 18:43:19.184  INFO 5596 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1210 ms
+2018-09-06 18:43:19.195  INFO 5596 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---登陆过滤器
+2018-09-06 18:43:19.207  INFO 5596 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---过滤验证器
+2018-09-06 18:43:19.215  INFO 5596 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---授权过滤器
+2018-09-06 18:43:19.215  INFO 5596 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---wraper过滤器
+2018-09-06 18:43:19.219  INFO 5596 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---启动监听器
+2018-09-06 18:43:19.312  INFO 5596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-06 18:43:19.312  INFO 5596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-06 18:43:19.316  INFO 5596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-06 18:43:19.316  INFO 5596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-06 18:43:19.316  INFO 5596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-09-06 18:43:19.316  INFO 5596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-09-06 18:43:19.316  INFO 5596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-09-06 18:43:19.316  INFO 5596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-09-06 18:43:19.316  INFO 5596 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-06 18:43:19.336  INFO 5596 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://test.mycasdomain.com/cas]
+2018-09-06 18:43:19.340  INFO 5596 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2018-09-06 18:43:19.340  INFO 5596 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-09-06 18:43:19.340  INFO 5596 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://test.mycasdomain.com/cas]
+2018-09-06 18:43:19.344  INFO 5596 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2018-09-06 18:43:19.344  INFO 5596 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://test.mycasdomain.com/cas]
+2018-09-06 18:43:19.344  INFO 5596 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-09-06 18:43:19.344  INFO 5596 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.chenxing.casoverlayclient.filter.SimpleUrlPatternMatcherStrategy]
+2018-09-06 18:43:19.344  INFO 5596 --- [localhost-startStop-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---配置正则表达式的规则
+2018-09-06 18:43:19.543  INFO 5596 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Thu Sep 06 18:43:17 CST 2018]; root of context hierarchy
+2018-09-06 18:43:19.594  INFO 5596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-09-06 18:43:19.597  INFO 5596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-09-06 18:43:19.597  INFO 5596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2()
+2018-09-06 18:43:19.597  INFO 5596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-09-06 18:43:19.597  INFO 5596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 18:43:19.597  INFO 5596 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 18:43:19.601  INFO 5596 --- [main] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---WebMvcConfigurerAdapter
+2018-09-06 18:43:19.609  INFO 5596 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-09-06 18:43:19.617  INFO 5596 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 18:43:19.617  INFO 5596 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 18:43:19.648  INFO 5596 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 18:43:19.758  INFO 5596 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-06 18:43:20.007  INFO 5596 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8444 (https)
+2018-09-06 18:43:20.011  INFO 5596 --- [main] c.c.c.CasOverlayClientApplication        : Started CasOverlayClientApplication in 2.325 seconds (JVM running for 2.632)
+2018-09-06 18:44:14.787  INFO 5596 --- [https-jsse-nio-8444-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-06 18:44:14.788  INFO 5596 --- [https-jsse-nio-8444-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-06 18:44:14.801  INFO 5596 --- [https-jsse-nio-8444-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-09-06 18:44:14.809  INFO 5596 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:44:14.957  INFO 5596 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:44:14.973  INFO 5596 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:44:14.988  INFO 5596 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:44:15.554  INFO 5596 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:44:28.802  INFO 5596 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:44:28.806  INFO 5596 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:44:28.806  INFO 5596 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:45:07.039  INFO 5596 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:45:07.093  INFO 5596 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:45:07.093  INFO 5596 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2018-09-06 18:45:07.093  INFO 5596 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
