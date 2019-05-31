@@ -343,3 +343,556 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-09-10 11:49:57.446  INFO 11072 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
 2018-09-10 11:49:57.457  INFO 11072 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
 2018-09-10 11:49:58.012  INFO 11072 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:13.737  INFO 12160 --- [main] c.c.c.CasOverlayClientApplication        : Starting CasOverlayClientApplication on DESKTOP-N5K2GI1 with PID 12160 (C:\Users\huayu\git\cas-overlay-client2\target\classes started by huayu in C:\Users\huayu\git\cas-overlay-client2)
+2019-05-31 11:18:13.753  INFO 12160 --- [main] c.c.c.CasOverlayClientApplication        : No active profile set, falling back to default profiles: default
+2019-05-31 11:18:13.784  INFO 12160 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 11:18:13 CST 2019]; root of context hierarchy
+2019-05-31 11:18:14.799  INFO 12160 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8444 (https)
+2019-05-31 11:18:14.807  INFO 12160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 11:18:14.807  INFO 12160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-05-31 11:18:14.994  INFO 12160 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-31 11:18:14.994  INFO 12160 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-31 11:18:14.994  INFO 12160 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1210 ms
+2019-05-31 11:18:15.010  INFO 12160 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---登陆过滤器
+2019-05-31 11:18:15.026  INFO 12160 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---过滤验证器
+2019-05-31 11:18:15.026  INFO 12160 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---授权过滤器
+2019-05-31 11:18:15.041  INFO 12160 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---wraper过滤器
+2019-05-31 11:18:15.041  INFO 12160 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---启动监听器
+2019-05-31 11:18:15.151  INFO 12160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-31 11:18:15.151  INFO 12160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-31 11:18:15.151  INFO 12160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-31 11:18:15.151  INFO 12160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-31 11:18:15.151  INFO 12160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2019-05-31 11:18:15.151  INFO 12160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2019-05-31 11:18:15.151  INFO 12160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2019-05-31 11:18:15.151  INFO 12160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2019-05-31 11:18:15.151  INFO 12160 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-31 11:18:15.166  INFO 12160 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 11:18:15.166  INFO 12160 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 11:18:15.182  INFO 12160 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2019-05-31 11:18:15.182  INFO 12160 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 11:18:15.182  INFO 12160 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 11:18:15.182  INFO 12160 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 11:18:15.182  INFO 12160 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2019-05-31 11:18:15.182  INFO 12160 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.chenxing.casoverlayclient.filter.SimpleUrlPatternMatcherStrategy]
+2019-05-31 11:18:15.182  INFO 12160 --- [localhost-startStop-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---配置正则表达式的规则
+2019-05-31 11:18:15.369  INFO 12160 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 11:18:13 CST 2019]; root of context hierarchy
+2019-05-31 11:18:15.416  INFO 12160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.IndexController.index(javax.servlet.http.HttpServletRequest)
+2019-05-31 11:18:15.416  INFO 12160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut(javax.servlet.http.HttpSession)
+2019-05-31 11:18:15.416  INFO 12160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2()
+2019-05-31 11:18:15.416  INFO 12160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2019-05-31 11:18:15.416  INFO 12160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-31 11:18:15.416  INFO 12160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-31 11:18:15.416  INFO 12160 --- [main] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---WebMvcConfigurerAdapter
+2019-05-31 11:18:15.432  INFO 12160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-31 11:18:15.447  INFO 12160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 11:18:15.447  INFO 12160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 11:18:15.479  INFO 12160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 11:18:15.572  INFO 12160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-31 11:18:15.947  INFO 12160 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8444 (https)
+2019-05-31 11:18:15.954  INFO 12160 --- [main] c.c.c.CasOverlayClientApplication        : Started CasOverlayClientApplication in 2.467 seconds (JVM running for 2.761)
+2019-05-31 11:18:27.223  INFO 12160 --- [https-jsse-nio-8444-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-31 11:18:27.224  INFO 12160 --- [https-jsse-nio-8444-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-31 11:18:27.237  INFO 12160 --- [https-jsse-nio-8444-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2019-05-31 11:18:27.245  INFO 12160 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:27.444  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:27.464  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:27.487  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:28.002  INFO 12160 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:32.668  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:32.730  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:32.730  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:32.734  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:39.266  INFO 12160 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:39.335  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:39.335  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:18:39.335  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:15.156  INFO 12160 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:15.227  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:15.227  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:15.230  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:17.463  INFO 12160 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:17.514  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:17.514  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:17.518  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:22.976  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:22.979  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:22.979  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:25.050  INFO 12160 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:25.112  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:25.112  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:25.116  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:26.681  INFO 12160 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:26.685  INFO 12160 --- [https-jsse-nio-8444-exec-7] c.c.c.rest.LoginController               : --controller-loginOut1
+2019-05-31 11:19:32.026  INFO 12160 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:32.089  INFO 12160 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:32.089  INFO 12160 --- [https-jsse-nio-8444-exec-10] c.c.c.rest.LoginController               : --controller-loginOut2
+2019-05-31 11:19:36.715  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:36.794  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:36.798  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:36.798  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:38.222  INFO 12160 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:38.286  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:38.286  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:38.290  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:45.840  INFO 12160 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:45.899  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:45.903  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:45.903  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:47.124  INFO 12160 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:47.173  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:47.173  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:47.177  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:49.011  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:49.056  INFO 12160 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:49.056  INFO 12160 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:19:49.056  INFO 12160 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:03.815  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:03.818  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:03.818  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:05.483  INFO 12160 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:05.485  INFO 12160 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:05.487  INFO 12160 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:06.440  INFO 12160 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:06.503  INFO 12160 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:06.505  INFO 12160 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:06.507  INFO 12160 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:08.893  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:08.943  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:08.945  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 11:20:08.947  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:40.673  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:48.706  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:48.708  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:48.711  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:50.294  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:50.295  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:50.295  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:51.756  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:51.804  INFO 12160 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:51.805  INFO 12160 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:56:51.806  INFO 12160 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:58:00.871  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:58:00.976  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:58:00.980  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 13:58:00.980  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:00:26.448  INFO 12160 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:00:26.502  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:00:26.506  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:00:26.506  INFO 12160 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:00:27.574  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:00:27.615  INFO 12160 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:00:27.619  INFO 12160 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:00:27.619  INFO 12160 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:27.889  INFO 12160 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:27.965  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:27.968  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:27.968  INFO 12160 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:29.159  INFO 12160 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:29.201  INFO 12160 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:29.201  INFO 12160 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:29.201  INFO 12160 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:30.076  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:02:30.076  INFO 12160 --- [https-jsse-nio-8444-exec-6] c.c.c.rest.LoginController               : --controller-loginOut1
+2019-05-31 14:09:57.019  INFO 2268 --- [main] c.c.c.CasOverlayClientApplication        : Starting CasOverlayClientApplication on DESKTOP-N5K2GI1 with PID 2268 (C:\Users\huayu\git\cas-overlay-client2\target\classes started by huayu in C:\Users\huayu\git\cas-overlay-client2)
+2019-05-31 14:09:57.019  INFO 2268 --- [main] c.c.c.CasOverlayClientApplication        : No active profile set, falling back to default profiles: default
+2019-05-31 14:09:57.062  INFO 2268 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 14:09:57 CST 2019]; root of context hierarchy
+2019-05-31 14:09:58.264  INFO 2268 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8444 (https)
+2019-05-31 14:09:58.276  INFO 2268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 14:09:58.276  INFO 2268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-05-31 14:09:58.483  INFO 2268 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-31 14:09:58.483  INFO 2268 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-31 14:09:58.487  INFO 2268 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1425 ms
+2019-05-31 14:09:58.498  INFO 2268 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---登陆过滤器
+2019-05-31 14:09:58.514  INFO 2268 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---过滤验证器
+2019-05-31 14:09:58.522  INFO 2268 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---授权过滤器
+2019-05-31 14:09:58.526  INFO 2268 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---wraper过滤器
+2019-05-31 14:09:58.526  INFO 2268 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---启动监听器
+2019-05-31 14:09:58.631  INFO 2268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-31 14:09:58.631  INFO 2268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-31 14:09:58.631  INFO 2268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-31 14:09:58.631  INFO 2268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-31 14:09:58.631  INFO 2268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2019-05-31 14:09:58.631  INFO 2268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2019-05-31 14:09:58.631  INFO 2268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2019-05-31 14:09:58.631  INFO 2268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2019-05-31 14:09:58.635  INFO 2268 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-31 14:09:58.654  INFO 2268 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:09:58.658  INFO 2268 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 14:09:58.658  INFO 2268 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2019-05-31 14:09:58.658  INFO 2268 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:09:58.658  INFO 2268 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 14:09:58.658  INFO 2268 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:09:58.658  INFO 2268 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2019-05-31 14:09:58.658  INFO 2268 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.chenxing.casoverlayclient.filter.SimpleUrlPatternMatcherStrategy]
+2019-05-31 14:09:58.658  INFO 2268 --- [localhost-startStop-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---配置正则表达式的规则
+2019-05-31 14:09:58.889  INFO 2268 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 14:09:57 CST 2019]; root of context hierarchy
+2019-05-31 14:09:58.943  INFO 2268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.IndexController.index(javax.servlet.http.HttpServletRequest)
+2019-05-31 14:09:58.943  INFO 2268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2()
+2019-05-31 14:09:58.943  INFO 2268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2019-05-31 14:09:58.943  INFO 2268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut(javax.servlet.http.HttpSession)
+2019-05-31 14:09:58.943  INFO 2268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-31 14:09:58.947  INFO 2268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-31 14:09:58.951  INFO 2268 --- [main] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---WebMvcConfigurerAdapter
+2019-05-31 14:09:58.959  INFO 2268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-31 14:09:58.967  INFO 2268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:09:58.967  INFO 2268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:09:59.002  INFO 2268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:09:59.111  INFO 2268 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-31 14:09:59.549  INFO 2268 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8444 (https)
+2019-05-31 14:09:59.551  INFO 2268 --- [main] c.c.c.CasOverlayClientApplication        : Started CasOverlayClientApplication in 2.805 seconds (JVM running for 3.138)
+2019-05-31 14:10:20.105  INFO 2268 --- [https-jsse-nio-8444-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-31 14:10:20.108  INFO 2268 --- [https-jsse-nio-8444-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-31 14:10:20.121  INFO 2268 --- [https-jsse-nio-8444-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2019-05-31 14:10:20.128  INFO 2268 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:22.892  INFO 2268 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:22.908  INFO 2268 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:22.917  INFO 2268 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:28.356  INFO 2268 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:28.429  INFO 2268 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:28.432  INFO 2268 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:28.434  INFO 2268 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:30.645  INFO 2268 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:30.693  INFO 2268 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:30.695  INFO 2268 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:30.696  INFO 2268 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:31.975  INFO 2268 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:10:31.976  INFO 2268 --- [https-jsse-nio-8444-exec-2] c.c.c.rest.LoginController               : --controller-loginOut1
+2019-05-31 14:16:59.157  INFO 2268 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:17:14.688  INFO 2268 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:19:23.817  INFO 7848 --- [main] c.c.c.CasOverlayClientApplication        : Starting CasOverlayClientApplication on DESKTOP-N5K2GI1 with PID 7848 (C:\Users\huayu\git\cas-overlay-client2\target\classes started by huayu in C:\Users\huayu\git\cas-overlay-client2)
+2019-05-31 14:19:23.821  INFO 7848 --- [main] c.c.c.CasOverlayClientApplication        : No active profile set, falling back to default profiles: default
+2019-05-31 14:19:23.860  INFO 7848 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 14:19:23 CST 2019]; root of context hierarchy
+2019-05-31 14:19:24.887  INFO 7848 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8444 (https)
+2019-05-31 14:19:24.900  INFO 7848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 14:19:24.900  INFO 7848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-05-31 14:19:25.095  INFO 7848 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-31 14:19:25.099  INFO 7848 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-31 14:19:25.099  INFO 7848 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1243 ms
+2019-05-31 14:19:25.111  INFO 7848 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---登陆过滤器
+2019-05-31 14:19:25.130  INFO 7848 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---过滤验证器
+2019-05-31 14:19:25.134  INFO 7848 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---授权过滤器
+2019-05-31 14:19:25.138  INFO 7848 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---wraper过滤器
+2019-05-31 14:19:25.138  INFO 7848 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---启动监听器
+2019-05-31 14:19:25.243  INFO 7848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-31 14:19:25.247  INFO 7848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-31 14:19:25.247  INFO 7848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-31 14:19:25.247  INFO 7848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-31 14:19:25.247  INFO 7848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2019-05-31 14:19:25.247  INFO 7848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2019-05-31 14:19:25.247  INFO 7848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2019-05-31 14:19:25.247  INFO 7848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2019-05-31 14:19:25.247  INFO 7848 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-31 14:19:25.271  INFO 7848 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:19:25.275  INFO 7848 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 14:19:25.275  INFO 7848 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2019-05-31 14:19:25.275  INFO 7848 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:19:25.275  INFO 7848 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 14:19:25.275  INFO 7848 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:19:25.275  INFO 7848 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2019-05-31 14:19:25.275  INFO 7848 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.chenxing.casoverlayclient.filter.SimpleUrlPatternMatcherStrategy]
+2019-05-31 14:19:25.275  INFO 7848 --- [localhost-startStop-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---配置正则表达式的规则
+2019-05-31 14:19:25.485  INFO 7848 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 14:19:23 CST 2019]; root of context hierarchy
+2019-05-31 14:19:25.536  INFO 7848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.IndexController.index(javax.servlet.http.HttpServletRequest)
+2019-05-31 14:19:25.536  INFO 7848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2()
+2019-05-31 14:19:25.536  INFO 7848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2019-05-31 14:19:25.540  INFO 7848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut(javax.servlet.http.HttpSession)
+2019-05-31 14:19:25.540  INFO 7848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-31 14:19:25.540  INFO 7848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-31 14:19:25.544  INFO 7848 --- [main] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---WebMvcConfigurerAdapter
+2019-05-31 14:19:25.552  INFO 7848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-31 14:19:25.560  INFO 7848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:19:25.560  INFO 7848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:19:25.591  INFO 7848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:19:25.692  INFO 7848 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-31 14:19:25.962  INFO 7848 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8444 (https)
+2019-05-31 14:19:25.966  INFO 7848 --- [main] c.c.c.CasOverlayClientApplication        : Started CasOverlayClientApplication in 2.403 seconds (JVM running for 2.714)
+2019-05-31 14:19:27.836  INFO 7848 --- [https-jsse-nio-8444-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-31 14:19:27.839  INFO 7848 --- [https-jsse-nio-8444-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-31 14:19:27.853  INFO 7848 --- [https-jsse-nio-8444-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2019-05-31 14:19:27.864  INFO 7848 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:45.902  INFO 7848 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:46.035  INFO 7848 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:46.039  INFO 7848 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:46.039  INFO 7848 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:54.387  INFO 7848 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:54.452  INFO 7848 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:54.456  INFO 7848 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:54.456  INFO 7848 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:57.239  INFO 7848 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:21:57.241  INFO 7848 --- [https-jsse-nio-8444-exec-6] c.c.c.rest.LoginController               : --controller-loginOut2
+2019-05-31 14:22:05.007  INFO 7848 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:08.532  INFO 7848 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:08.536  INFO 7848 --- [https-jsse-nio-8444-exec-9] c.c.c.rest.LoginController               : --controller-loginOut1
+2019-05-31 14:22:13.785  INFO 7848 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:18.197  INFO 7848 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:20.846  INFO 7848 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:20.849  INFO 7848 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:20.850  INFO 7848 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:44.336  INFO 7848 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:44.339  INFO 7848 --- [https-jsse-nio-8444-exec-4] c.c.c.rest.LoginController               : --controller-loginOut2
+2019-05-31 14:22:51.349  INFO 7848 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:54.496  INFO 7848 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:22:54.500  INFO 7848 --- [https-jsse-nio-8444-exec-7] c.c.c.rest.LoginController               : --controller-loginOut1
+2019-05-31 14:22:58.090  INFO 7848 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:00.425  INFO 7848 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:00.429  INFO 7848 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:00.431  INFO 7848 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:07.673  INFO 7848 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:28.939  INFO 7848 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:28.984  INFO 7848 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:28.984  INFO 7848 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:28.984  INFO 7848 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:48.498  INFO 7848 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:23:48.502  INFO 7848 --- [https-jsse-nio-8444-exec-5] c.c.c.rest.LoginController               : --controller-loginOut-sucess
+2019-05-31 14:24:06.100  INFO 7848 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:24:06.102  INFO 7848 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:24:06.103  INFO 7848 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:24:07.122  INFO 7848 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:24:07.175  INFO 7848 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:24:07.179  INFO 7848 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:24:07.179  INFO 7848 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:30:59.105  INFO 5564 --- [main] c.c.c.CasOverlayClientApplication        : Starting CasOverlayClientApplication on DESKTOP-N5K2GI1 with PID 5564 (C:\Users\huayu\git\cas-overlay-client2\target\classes started by huayu in C:\Users\huayu\git\cas-overlay-client2)
+2019-05-31 14:30:59.105  INFO 5564 --- [main] c.c.c.CasOverlayClientApplication        : No active profile set, falling back to default profiles: default
+2019-05-31 14:30:59.152  INFO 5564 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 14:30:59 CST 2019]; root of context hierarchy
+2019-05-31 14:31:00.202  INFO 5564 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8444 (https)
+2019-05-31 14:31:00.215  INFO 5564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 14:31:00.215  INFO 5564 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-05-31 14:31:00.403  INFO 5564 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-31 14:31:00.407  INFO 5564 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-31 14:31:00.407  INFO 5564 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1259 ms
+2019-05-31 14:31:00.418  INFO 5564 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---登陆过滤器
+2019-05-31 14:31:00.434  INFO 5564 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---过滤验证器
+2019-05-31 14:31:00.438  INFO 5564 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---授权过滤器
+2019-05-31 14:31:00.442  INFO 5564 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---wraper过滤器
+2019-05-31 14:31:00.442  INFO 5564 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---启动监听器
+2019-05-31 14:31:00.535  INFO 5564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-31 14:31:00.535  INFO 5564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-31 14:31:00.539  INFO 5564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-31 14:31:00.539  INFO 5564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-31 14:31:00.539  INFO 5564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2019-05-31 14:31:00.539  INFO 5564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2019-05-31 14:31:00.539  INFO 5564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2019-05-31 14:31:00.539  INFO 5564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2019-05-31 14:31:00.539  INFO 5564 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-31 14:31:00.559  INFO 5564 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:31:00.563  INFO 5564 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 14:31:00.563  INFO 5564 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2019-05-31 14:31:00.563  INFO 5564 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:31:00.567  INFO 5564 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 14:31:00.567  INFO 5564 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:31:00.567  INFO 5564 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2019-05-31 14:31:00.567  INFO 5564 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.chenxing.casoverlayclient.filter.SimpleUrlPatternMatcherStrategy]
+2019-05-31 14:31:00.567  INFO 5564 --- [localhost-startStop-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---配置正则表达式的规则
+2019-05-31 14:31:00.770  INFO 5564 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 14:30:59 CST 2019]; root of context hierarchy
+2019-05-31 14:31:00.816  INFO 5564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.IndexController.index(javax.servlet.http.HttpServletRequest)
+2019-05-31 14:31:00.816  INFO 5564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2()
+2019-05-31 14:31:00.816  INFO 5564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2019-05-31 14:31:00.816  INFO 5564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut(javax.servlet.http.HttpSession)
+2019-05-31 14:31:00.820  INFO 5564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-31 14:31:00.820  INFO 5564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-31 14:31:00.824  INFO 5564 --- [main] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---WebMvcConfigurerAdapter
+2019-05-31 14:31:00.832  INFO 5564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-31 14:31:00.840  INFO 5564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:31:00.840  INFO 5564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:31:00.875  INFO 5564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:31:00.977  INFO 5564 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-31 14:31:01.223  INFO 5564 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8444 (https)
+2019-05-31 14:31:01.226  INFO 5564 --- [main] c.c.c.CasOverlayClientApplication        : Started CasOverlayClientApplication in 2.371 seconds (JVM running for 2.689)
+2019-05-31 14:31:06.930  INFO 5564 --- [https-jsse-nio-8444-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-31 14:31:06.933  INFO 5564 --- [https-jsse-nio-8444-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-31 14:31:06.947  INFO 5564 --- [https-jsse-nio-8444-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2019-05-31 14:31:06.955  INFO 5564 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:07.083  INFO 5564 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:07.099  INFO 5564 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:07.111  INFO 5564 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:10.569  INFO 5564 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:10.614  INFO 5564 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:10.614  INFO 5564 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:10.618  INFO 5564 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:11.805  INFO 5564 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:11.808  INFO 5564 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:11.808  INFO 5564 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:18.079  INFO 5564 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:18.083  INFO 5564 --- [https-jsse-nio-8444-exec-10] c.c.c.rest.LoginController               : --controller-loginOut-sucess
+2019-05-31 14:31:20.699  INFO 5564 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:31:20.701  INFO 5564 --- [https-jsse-nio-8444-exec-2] c.c.c.rest.LoginController               : --controller-loginOut2
+2019-05-31 14:33:45.425  INFO 5100 --- [main] c.c.c.CasOverlayClientApplication        : Starting CasOverlayClientApplication on DESKTOP-N5K2GI1 with PID 5100 (C:\Users\huayu\git\cas-overlay-client2\target\classes started by huayu in C:\Users\huayu\git\cas-overlay-client2)
+2019-05-31 14:33:45.425  INFO 5100 --- [main] c.c.c.CasOverlayClientApplication        : No active profile set, falling back to default profiles: default
+2019-05-31 14:33:45.472  INFO 5100 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 14:33:45 CST 2019]; root of context hierarchy
+2019-05-31 14:33:46.549  INFO 5100 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8444 (https)
+2019-05-31 14:33:46.562  INFO 5100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 14:33:46.562  INFO 5100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-05-31 14:33:46.761  INFO 5100 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-31 14:33:46.761  INFO 5100 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-31 14:33:46.765  INFO 5100 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1293 ms
+2019-05-31 14:33:46.777  INFO 5100 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---登陆过滤器
+2019-05-31 14:33:46.792  INFO 5100 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---过滤验证器
+2019-05-31 14:33:46.796  INFO 5100 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---授权过滤器
+2019-05-31 14:33:46.800  INFO 5100 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---wraper过滤器
+2019-05-31 14:33:46.800  INFO 5100 --- [localhost-startStop-1] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---启动监听器
+2019-05-31 14:33:46.902  INFO 5100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-31 14:33:46.905  INFO 5100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-31 14:33:46.905  INFO 5100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-31 14:33:46.905  INFO 5100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-31 14:33:46.905  INFO 5100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2019-05-31 14:33:46.905  INFO 5100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2019-05-31 14:33:46.905  INFO 5100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2019-05-31 14:33:46.905  INFO 5100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2019-05-31 14:33:46.905  INFO 5100 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-31 14:33:46.925  INFO 5100 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:33:46.929  INFO 5100 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 14:33:46.929  INFO 5100 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2019-05-31 14:33:46.929  INFO 5100 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:33:46.933  INFO 5100 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [https://test.huayubenji.com:8444]
+2019-05-31 14:33:46.933  INFO 5100 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://sso.chenxing.com/cas-server-v42]
+2019-05-31 14:33:46.933  INFO 5100 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2019-05-31 14:33:46.933  INFO 5100 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.chenxing.casoverlayclient.filter.SimpleUrlPatternMatcherStrategy]
+2019-05-31 14:33:46.933  INFO 5100 --- [localhost-startStop-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---配置正则表达式的规则
+2019-05-31 14:33:47.140  INFO 5100 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b59d31: startup date [Fri May 31 14:33:45 CST 2019]; root of context hierarchy
+2019-05-31 14:33:47.190  INFO 5100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.IndexController.index(javax.servlet.http.HttpServletRequest)
+2019-05-31 14:33:47.194  INFO 5100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut(javax.servlet.http.HttpSession)
+2019-05-31 14:33:47.194  INFO 5100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2()
+2019-05-31 14:33:47.194  INFO 5100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.chenxing.casoverlayclient.rest.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2019-05-31 14:33:47.194  INFO 5100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-31 14:33:47.194  INFO 5100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-31 14:33:47.202  INFO 5100 --- [main] ication$$EnhancerBySpringCGLIB$$7e6febd5 : ---WebMvcConfigurerAdapter
+2019-05-31 14:33:47.206  INFO 5100 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-31 14:33:47.218  INFO 5100 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:33:47.218  INFO 5100 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:33:47.253  INFO 5100 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 14:33:47.358  INFO 5100 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-31 14:33:47.620  INFO 5100 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8444 (https)
+2019-05-31 14:33:47.624  INFO 5100 --- [main] c.c.c.CasOverlayClientApplication        : Started CasOverlayClientApplication in 2.457 seconds (JVM running for 2.779)
+2019-05-31 14:34:10.848  INFO 5100 --- [https-jsse-nio-8444-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-31 14:34:10.849  INFO 5100 --- [https-jsse-nio-8444-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-31 14:34:10.863  INFO 5100 --- [https-jsse-nio-8444-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2019-05-31 14:34:10.871  INFO 5100 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:10.992  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:11.008  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:11.027  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:12.887  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:12.931  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:12.931  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:12.931  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:14.618  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:14.619  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.rest.LoginController               : --controller-loginOut1
+2019-05-31 14:34:33.279  INFO 5100 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:33.325  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:33.325  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:33.325  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:34.434  INFO 5100 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:34.487  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:34.491  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:34.491  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:36.577  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:36.580  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.rest.LoginController               : --controller-loginOut2
+2019-05-31 14:34:58.576  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:58.626  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:58.630  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:58.630  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:59.707  INFO 5100 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:59.749  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:59.753  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:34:59.753  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:35:04.984  INFO 5100 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:35:05.024  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:35:05.028  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:35:05.028  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:02.920  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:02.923  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:02.924  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:04.485  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:04.530  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:04.530  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:04.530  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:05.803  INFO 5100 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:05.807  INFO 5100 --- [https-jsse-nio-8444-exec-1] c.c.c.rest.LoginController               : --controller-loginOut2
+2019-05-31 14:36:54.947  INFO 5100 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:36:54.949  INFO 5100 --- [https-jsse-nio-8444-exec-3] c.c.c.rest.LoginController               : --controller-loginOut-sucess
+2019-05-31 14:37:05.591  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:37:05.645  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:37:05.649  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:37:05.649  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:37:06.966  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:37:07.004  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:37:07.004  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:37:07.004  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:47.066  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:47.113  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:47.113  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:47.117  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:48.496  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:48.499  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.rest.LoginController               : --controller-loginOut1
+2019-05-31 14:38:55.239  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:57.520  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:57.522  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:57.523  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:58.985  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:59.021  INFO 5100 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:59.025  INFO 5100 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:38:59.025  INFO 5100 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:00.377  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:00.393  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.rest.LoginController               : --controller-loginOut2
+2019-05-31 14:39:11.900  INFO 5100 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:11.945  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:11.945  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:11.949  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:12.739  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:12.782  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:12.782  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:12.782  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:14.789  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:14.793  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.rest.LoginController               : --controller-loginOut1
+2019-05-31 14:39:24.301  INFO 5100 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:24.343  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:24.343  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:24.343  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:25.542  INFO 5100 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:25.578  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:25.578  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:25.582  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:43.449  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:43.489  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:43.489  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:43.489  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:55.549  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:39:55.553  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.rest.LoginController               : --controller-loginOut2
+2019-05-31 14:41:09.689  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:09.740  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:09.744  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:09.744  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:10.977  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:10.982  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:10.983  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:12.407  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:12.445  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:12.445  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:12.445  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:14.996  INFO 5100 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:15.032  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:15.032  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:15.036  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:16.298  INFO 5100 --- [https-jsse-nio-8444-exec-6] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:16.332  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:16.332  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:16.332  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:17.380  INFO 5100 --- [https-jsse-nio-8444-exec-9] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:17.417  INFO 5100 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:17.421  INFO 5100 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:17.421  INFO 5100 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:20.002  INFO 5100 --- [https-jsse-nio-8444-exec-4] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:20.041  INFO 5100 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:20.041  INFO 5100 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:20.041  INFO 5100 --- [https-jsse-nio-8444-exec-2] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:21.231  INFO 5100 --- [https-jsse-nio-8444-exec-5] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:21.266  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:21.266  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:21.266  INFO 5100 --- [https-jsse-nio-8444-exec-7] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:22.426  INFO 5100 --- [https-jsse-nio-8444-exec-8] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:22.461  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:22.465  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:22.465  INFO 5100 --- [https-jsse-nio-8444-exec-10] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:23.650  INFO 5100 --- [https-jsse-nio-8444-exec-1] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:23.690  INFO 5100 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:23.690  INFO 5100 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url
+2019-05-31 14:41:23.690  INFO 5100 --- [https-jsse-nio-8444-exec-3] c.c.c.f.SimpleUrlPatternMatcherStrategy  : ---系统2-过滤不需要登陆的url

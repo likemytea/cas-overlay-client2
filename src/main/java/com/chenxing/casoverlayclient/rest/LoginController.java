@@ -28,7 +28,7 @@ public class LoginController {
 		// http://yellowcong.com:8080/cas-client-maven/user/loginOut/success
 
 		// 这个是直接退出，走的是默认退出方式
-		return "redirect:https://test.mycasdomain.com/cas/logout";
+		return "redirect:https://sso.chenxing.com/cas-server-v42/logout";
 	}
 
 	@RequestMapping("/loginOut2")
@@ -36,13 +36,13 @@ public class LoginController {
 		log.info("--controller-loginOut2");
 		session.invalidate();
 		// 退出登录后，跳转到退成成功的页面，不走默认页面
-		return "redirect:https://test.mycasdomain.com/cas/logout?service=http://172.16.176.51:8080/loginOut/success";
+		return "redirect:https://sso.chenxing.com/cas-server-v42/logout?service=https://test.huayubenji.com:8444/user/loginOut/success";
 	}
 
 	@RequestMapping("/loginOut/success")
 	@ResponseBody
 	public String loginOut2() {
 		log.info("--controller-loginOut-sucess");
-		return "注销成功";
+		return "logout111111";
 	}
 }

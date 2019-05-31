@@ -29,7 +29,7 @@ public class CasOverlayClientApplication {
 	}
 
 	// url的前缀
-	private static final String CAS_SERVER_URL_PREFIX = "https://test.mycasdomain.com/cas";
+	private static final String CAS_SERVER_URL_PREFIX = "https://sso.chenxing.com/cas-server-v42";
 	// 本机的名称
 	private static final String SERVER_NAME = "https://test.huayubenji.com:8444";
 
